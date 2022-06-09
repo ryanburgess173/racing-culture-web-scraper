@@ -1,0 +1,12 @@
+C:\Users\ryanb\source\repos\RacingCultureWebScraper\RacingCultureWebScraper.BAL\bin\Debug\net6.0\RacingCultureWebScraper.BAL.deps.json
+C:\Users\ryanb\source\repos\RacingCultureWebScraper\RacingCultureWebScraper.BAL\bin\Debug\net6.0\RacingCultureWebScraper.BAL.dll
+C:\Users\ryanb\source\repos\RacingCultureWebScraper\RacingCultureWebScraper.BAL\bin\Debug\net6.0\RacingCultureWebScraper.BAL.pdb
+C:\Users\ryanb\source\repos\RacingCultureWebScraper\RacingCultureWebScraper.BAL\obj\Debug\net6.0\RacingCultureWebScraper.BAL.csproj.AssemblyReference.cache
+C:\Users\ryanb\source\repos\RacingCultureWebScraper\RacingCultureWebScraper.BAL\obj\Debug\net6.0\RacingCultureWebScraper.BAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ryanb\source\repos\RacingCultureWebScraper\RacingCultureWebScraper.BAL\obj\Debug\net6.0\RacingCultureWebScraper.BAL.AssemblyInfoInputs.cache
+C:\Users\ryanb\source\repos\RacingCultureWebScraper\RacingCultureWebScraper.BAL\obj\Debug\net6.0\RacingCultureWebScraper.BAL.AssemblyInfo.cs
+C:\Users\ryanb\source\repos\RacingCultureWebScraper\RacingCultureWebScraper.BAL\obj\Debug\net6.0\RacingCultureWebScraper.BAL.csproj.CoreCompileInputs.cache
+C:\Users\ryanb\source\repos\RacingCultureWebScraper\RacingCultureWebScraper.BAL\obj\Debug\net6.0\RacingCultureWebScraper.BAL.dll
+C:\Users\ryanb\source\repos\RacingCultureWebScraper\RacingCultureWebScraper.BAL\obj\Debug\net6.0\refint\RacingCultureWebScraper.BAL.dll
+C:\Users\ryanb\source\repos\RacingCultureWebScraper\RacingCultureWebScraper.BAL\obj\Debug\net6.0\RacingCultureWebScraper.BAL.pdb
+C:\Users\ryanb\source\repos\RacingCultureWebScraper\RacingCultureWebScraper.BAL\obj\Debug\net6.0\ref\RacingCultureWebScraper.BAL.dll

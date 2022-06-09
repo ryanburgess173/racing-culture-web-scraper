@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "RacingCultureWebScraper/1.0.0": {
+        "dependencies": {
+          "RacingCultureWebScraper.BAL": "1.0.0"
+        },
+        "runtime": {
+          "RacingCultureWebScraper.dll": {}
+        }
+      },
+      "RacingCultureWebScraper.BAL/1.0.0": {
+        "runtime": {
+          "RacingCultureWebScraper.BAL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RacingCultureWebScraper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RacingCultureWebScraper.BAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
