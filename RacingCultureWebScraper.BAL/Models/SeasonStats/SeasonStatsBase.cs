@@ -1,8 +1,8 @@
 ﻿using RacingCultureWebScraper.BAL.Models;
 
-namespace RacingCultureWebScraper.BAL.SeasonStats
+namespace RacingCultureWebScraper.BAL.Models.SeasonStats
 {
-    internal class Base
+    internal class SeasonStatsBase
     {
         public int ID { get; set; }
         public DateOnly RaceDate { get; set; }
@@ -18,5 +18,7 @@ namespace RacingCultureWebScraper.BAL.SeasonStats
         public double RaceSpeed { get; set; }
         public int LapsCompleted { get; set; }
         public Division Division { get; set; }
+
+        public SeasonStatsBase() { }
     }
 }
