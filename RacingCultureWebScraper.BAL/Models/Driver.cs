@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RacingCultureWebScraper.BAL.Models
 {
-    internal class Driver
+    public class Driver
     {
         public int ID { get; set; }
         public string FirstName { get; set; }

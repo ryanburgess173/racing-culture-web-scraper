@@ -2,7 +2,7 @@
 
 namespace RacingCultureWebScraper.BAL.Models.SeasonStats
 {
-    internal class SeasonStatsBase
+    public class SeasonStatsBase
     {
         public int ID { get; set; }
         public DateOnly RaceDate { get; set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RacingCultureWebScraper.BAL.Models.SeasonStats.F1
 {
-    internal class SeasonStatsF1
+    internal class SeasonStatsF1 : SeasonStatsBase
     {
         public int Laps { get; set; }
         public SeasonStatsF1(int laps) : base()

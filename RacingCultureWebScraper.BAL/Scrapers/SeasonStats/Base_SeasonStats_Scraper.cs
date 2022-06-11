@@ -5,19 +5,21 @@ using System.Net;
 
 namespace RacingCultureWebScraper.BAL.Scrapers.SeasonStats
 {
-    internal class Base_Scraper
+    public abstract class Base_SeasonStats_Scraper
     {
         public SeasonStatsBase seasonStats { get; set; }
         private string urlBase { get; set; }
         private int yearToScrape { get; set; }
         private char divisionToScrape { get; set; }
-        private string SeasonStatsUrlModifier { get; set; }
+        private string seasonStatsUrlModifier { get; set; }
         public HtmlDocument loadedHtmlDocument { get; set; }
+        public string[] FieldsToScrape { get; set; }
 
-        public Base_Scraper(int year, char divisionModifier)
+        public Base_SeasonStats_Scraper(int year, char divisionModifier)
         {
-            this.SeasonStatsUrlModifier = "/season-stats";
+            this.seasonStatsUrlModifier = "/season-stats";
             this.seasonStats = new SeasonStatsBase();
+            var appSettings = ConfigurationManager.AppSettings;
             this.urlBase = ConfigurationManager.AppSettings["scrapingUrlBase"] ?? "";
             this.yearToScrape = year;
             this.divisionToScrape = divisionModifier;
@@ -26,6 +28,24 @@ namespace RacingCultureWebScraper.BAL.Scrapers.SeasonStats
             this.loadedHtmlDocument = ParseResponse(responseString);
         }
 
+        public virtual void SetFieldsToScrape()
+        {
+            this.FieldsToScrape = new string[] {
+                "date",
+                "track",
+                "cars",
+                "winners",
+                "laps",
+                "st",
+                "manufacturer",
+                "len",
+                "sfc",
+                "miles",
+                "pole",
+                "speed",
+                "lc"
+            };
+        }
         private HtmlDocument ParseResponse(string response)
         {
             HtmlDocument htmlDocument = new HtmlDocument();
@@ -36,7 +56,7 @@ namespace RacingCultureWebScraper.BAL.Scrapers.SeasonStats
         private string GenerateRequestUrl()
         {
             return this.urlBase 
-                + this.SeasonStatsUrlModifier 
+                + this.seasonStatsUrlModifier 
                 + "/" + this.yearToScrape.ToString() 
                 + "/" + this.divisionToScrape.ToString() + "/";
         }
@@ -46,7 +66,13 @@ namespace RacingCultureWebScraper.BAL.Scrapers.SeasonStats
             HttpClient client = new HttpClient();
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls13;
             client.DefaultRequestHeaders.Accept.Clear();
-            string response = await client.GetStringAsync(fullUrl);
+            string response;
+            try { 
+                response = await client.GetStringAsync(fullUrl); 
+            }catch(AggregateException e){
+                Console.WriteLine("Aggregate Exception - "+e.ToString());
+                response = "AggregateException thrown. Likely a bad URL.";
+            }
             return response;
         }
 

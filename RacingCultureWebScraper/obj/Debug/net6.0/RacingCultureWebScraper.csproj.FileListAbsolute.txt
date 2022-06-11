@@ -38,3 +38,5 @@ C:\Users\ryanb\source\repos\RacingCultureWebScraper\RacingCultureWebScraper\bin\
 C:\Users\ryanb\source\repos\RacingCultureWebScraper\RacingCultureWebScraper\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\ryanb\source\repos\RacingCultureWebScraper\RacingCultureWebScraper\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ryanb\source\repos\RacingCultureWebScraper\RacingCultureWebScraper\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\ryanb\source\repos\RacingCultureWebScraper\RacingCultureWebScraper\bin\Debug\net6.0\HtmlAgilityPack.dll
+C:\Users\ryanb\source\repos\RacingCultureWebScraper\RacingCultureWebScraper\bin\Debug\net6.0\RacingCultureWebScraper.dll.config

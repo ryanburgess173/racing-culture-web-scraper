@@ -7,6 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="App.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\RacingCultureWebScraper.BAL\RacingCultureWebScraper.BAL.csproj" />
   </ItemGroup>
 

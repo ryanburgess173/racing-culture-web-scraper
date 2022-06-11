@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "utj+UANAOJwitP9DgCH2p3F54O8kIx1IAtUph5IhqkKy3qwXt4gvdP1ReGYjDxogoFh2li0F+rWVzQaAGGNAow==",
+  "dgSpecHash": "KXmVWjDkx5RjyV2vZ2w0Sa5mxdWHdJ+8jT3RNqxr+FR/9d8aY1Jtm3aBH3WJCLHdtwR7iy66ZwacKl5ftyW6uA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ryanb\\source\\repos\\RacingCultureWebScraper\\RacingCultureWebScraper\\RacingCultureWebScraper.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ryanb\\.nuget\\packages\\htmlagilitypack\\1.11.43\\htmlagilitypack.1.11.43.nupkg.sha512",
     "C:\\Users\\ryanb\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\ryanb\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.0\\system.configuration.configurationmanager.6.0.0.nupkg.sha512",
     "C:\\Users\\ryanb\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",

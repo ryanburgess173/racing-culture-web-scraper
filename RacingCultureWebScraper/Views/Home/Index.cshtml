@@ -1,27 +1,28 @@
 ﻿@model RacingCultureWebScraper.Models.HomeViewModel
-@{
-    ViewData["Title"] = "Home Page";
-}
-
 
 <div class="text-center">
     <h1>Season Stats Data Scraper</h1>
-    <label for="series">Choose a series:</label>
-    <select name="series" id="seriesDropDown">
-        @{
-            foreach(var division in Model.divisions)
-            {
-                        <option value={division.Name}>@division.Name</option>
-            }
-         }
-    </select>
-    <label for="years">Choose a year:</label>
+    <form method="post" action="/Home/FormSubmitSeasonStats">
+        
+        <label for="series">Choose a series:</label>
+        <select name="seriesDropDown" id="seriesDropDown">
+            @{
+                foreach(var division in Model.divisions)
+                {
+                    <option value=@division.Name>@division.Name</option>
+                }
+             }
+        </select>
 
-    <select name="years" id="yearsDropDown">
-        @{
-            for(var i=1950; i<=2022; i++){
-                        <option value={i}>@i</option>
-            }
-        }
-    </select>
+        <label for="years">Choose a year:</label>
+        <select name="yearsDropDown" id="yearsDropDown">
+            @{
+                for(var i=1950; i<=2022; i++){
+                    <option value=@i>@i</option>
+                }
+             }
+        </select>
+
+        <button type="submit">Begin Scraping</button>  
+    </form>
 </div>
